@@ -17,26 +17,22 @@
   <body>
     <header>
       <div class="container">
-        <button type="button" class="btn btn-danger">back</button>
+        <a href="index.html" type="button" class="btn btn-danger">back</a>
       </div>
     </header>
 
     <main id="main">
-      <h1 class="text-center fw-bold movie-title">Movie Title</h1>
+      <h1 id="title" class="text-center fw-bold movie-title"></h1>
       <div class="container">
         <div class="row">
           <div class="text-center col">
-            <img class="movie-img" src="qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg" />
+            <img id="image" class="movie-img" />
             <p class="text-center rating-paragraph">
-              <span class="badge text-bg-info fs-5">8.0</span>
+              <span id="rate" class="badge text-bg-info fs-5"></span>
             </p>
           </div>
           <div class="col">
-            <p class="h5">
-              information information information information information
-              information information information information information
-              information information information
-            </p>
+            <p class="h5" id="info"></p>
           </div>
         </div>
       </div>
@@ -47,5 +43,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN "
       crossorigin="anonymous "
     ></script>
+    <script src="movie.js"></script>
   </body>
 </html>
