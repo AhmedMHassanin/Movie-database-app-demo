@@ -34,14 +34,12 @@ function changeInfo(infoText) {
 }
 
 async function main() {
-  const data = await getMovie(505642);
-
+  const id = localStorage.getItem("id");
+  const data = await getMovie(id);
   changeTitle(data.original_title);
   changeImg(data.poster_path);
   changeRate(data.vote_average);
   changeInfo(data.overview);
-
-  console.log(data);
 }
 
 main();
